@@ -1,0 +1,12 @@
+<% if (page) { %>
+    <div>
+        <span>
+            共<%= wordcount(page.content) %>字
+                阅读时长约<%= min2read(page.content) %>分
+        </span>
+
+        <span id="busuanzi_container_page_pv">
+            访问量<span id="busuanzi_value_page_pv"></span>次
+        </span>
+    </div>
+    <% } %>
